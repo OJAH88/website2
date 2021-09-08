@@ -1,57 +1,136 @@
 body {
-    background: rgb(110, 224, 148);
-    font-family: 'Nunito', sans-serif;
-  } 
+    background: #5fe9b4;
+  }
 
-  /* General text color and font*/
+/* General text color and font*/
 p {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-    font-size: 115%;
-    color:#0D1A26;
-  }
-  
-  h1 {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    font-size: 350%;
-    color:#4c8bb3;
-    margin:5% auto 0px 10%;
-  }
-  
-  h2 {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    font-size: 180%;
-    color:#03588c;
-    margin:5% 10% 0px 10%;
-  }
-  
-  /* Introduction Text Alignment */
-  #introduction p {
-    margin: auto 50% 10% 10%;
-    font-size: 180%;
-  }
-  
- 
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 150%;
+  color:#0D1A26;
+}
 
-  /* Background section paragraph text alignment */
-  #backgroundinfo p {
-    margin:0 10% 0px 33%;
-  }
+/*for unordered lists */
+ul {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 150%;
+  font-style: italic;
+  color:#0D1A26;
+}
 
-  img {
-   
-    border: 45px solid #5c7196;
-  border-radius: 45px;
-  padding: 20px;
-  max-width: 20%;
-  height: auto;
-  border-radius:50%;
-  }
-  
-  
-  /* Skills section paragraph text alignment */
-  #skills p {
-    margin:0 10% 0px 33%;
-  }
+/* For making body headings bold */
+.bodyHeading {
+  font-weight: 600;
+}
+/* For making body text italicized */
+.bodyText {
+  font-style:italic;
+}
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 500%;
+  color:#03588c;
+  margin:5% auto 0px 10%;
+}
+
+h2 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 300%;
+  color:#03588c;
+  margin:5% 0% 0% 10%; 
+  padding: 0% 0% 0% 0%; 
+  vertical-align:top;
+}
+
+/* Introduction Text Alignment */
+#introduction p {
+  margin: auto 50% 0% 10%;
+  font-size: 250%;
+  vertical-align: top;
+}
+
+/*BACKGROUND SECTION */
+/*horizontally align header and text */
+#background {
+  display: flex;
+  margin-top: 10%;
+}
+
+#background h2 {
+  flex-basis: 30%;
+}
+/* Background section paragraph text alignment */
+#background p {
+
+  flex-basis: 70%;
+  margin:5% 10% 0% 0%;
+  padding:1% 0 0 0;
+}
+
+
+/*SKILLS SECTION */
+/* Skills section paragraph text alignment */
+#skills {
+  display:flex;
+  margin-top: 10%;
+}
+
+#skills h2 {
+  flex-basis: 30%;
+}
+
+#skill01 {
+  flex-basis: 20%;
+  text-align: left;
+
+}
+#skill02 {
+  flex-basis: 20%;
+  margin: 0 0% 0 0%;
+  text-align: left;
+}
+#skill03 {
+  flex-basis: 30%;
+  margin: 0 10% 0 0%;
+  text-align: left;
+}
+
+
+/* EXPERIENCE SECTION */
+#experience {
+  display: flex;
+  margin-top: 10%;
+}
+
+#experience h2 {
+  flex-basis: 30%;
+}
+
+#jobs {
+  flex-basis: 70%;
+  margin: 5% 10% 0% 0%;
+}
+
+#jobs .bodyHeading {
+  text-align: left;
+  margin: 0% 0% 0% 0%;
+}
+
+#jobs .bodyText {
+  float: right;
+}
+
+/* FOOTER SECTION */
+footer {
+  background-color: #0D1A26;
+}
+
+footer p {
+  color: #D0e9f2;
+  margin: 5% 0 0% 10%;
+  padding: 5% 0 5% 0%;
+}
