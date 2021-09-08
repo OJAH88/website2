@@ -7,6 +7,40 @@
      <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
         </style>
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+    }
+    
+    
+    
+    
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 15px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width:600px) {
+      .column {
+        width: 100%;
+      }
+    }
+    </style>
     <!--Title-->
     <title>Jesse Harlan's Website</title>
   </head>
@@ -15,14 +49,16 @@
   <body>
 
     <section id="introduction">
-        <p>
-        <h1>
-            Hi! <br> <img src="photo.jpg"  alt="Jesse" height="200" width="200" style="border:5px solid black; border-radius: 50%;"> <br>I'm Jesse.
-        </h1> 
-        
-          </p>
+    
+          <div class="row">
+            <div class="column">
+              <h1>     Hi! I'm Jesse.</h1></div>
+            
+            <div class="column">
+                <img src="photo.jpg"  alt="Jesse" style="vertical-align:middle; width:200px; height:200px;border-radius: 50%; "></div>
+            </div>
         </section>
-<br><br>
+
     <section id="background">
         <h2>Background</h2>
         
